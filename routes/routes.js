@@ -6,7 +6,11 @@ const router = express.Router();
 // });
 
 router.get("/", (req, res) => {
-    res.send("Home Page");
-})
+    res.render('index', { title: 'Home Page' })
+    // 'index' is the name of the template or view file to be rendered
+    // {} is an object (to be used by the template engine to dynamically generate the HTML) passed to the render method
+});
+
+
 
 module.exports = router;
