@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/add", (req, res) => {
-    res.render('add_users', { title: "Add Users" });
+    res.render('add_friend', { title: "Add Friend" });
 })
 
 router.get("/gallery", (req, res) => {
