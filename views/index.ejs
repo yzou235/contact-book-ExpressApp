@@ -18,12 +18,12 @@
                     <tbody>
                         <% friendsData.forEach(friend => { %>
                             <tr>
-                                <td><%= friend.id %></td>
-                                <td><img src="<%= friend.image %>" alt=""></td>
-                                <td><%= friend.name %></td>
-                                <td><%= friend.email %></td>
-                                <td><%= friend.phone %></td>
-                                <td>
+                                <td style="vertical-align: middle;"><%= friend.id %></td>
+                                <td style="vertical-align: middle;"><img src="<%= friend.image %>" alt="<%= friend.name %>" style="max-width: 100px; max-height: 100px; width: auto; height: auto;"></td>
+                                <td style="vertical-align: middle;"><%= friend.name %></td>
+                                <td style="vertical-align: middle;"><%= friend.email %></td>
+                                <td style="vertical-align: middle;"><%= friend.phone %></td>
+                                <td style="vertical-align: middle;">
                                     <a href="" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
                                     <a href="" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
                                 </td>

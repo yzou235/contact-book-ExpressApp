@@ -6,28 +6,28 @@ const friends = [
         name: 'Harry Potter',
         email: 'h.potter@hogwarts.edu',
         phone: '1234567890',
-        image: path.join(__dirname, '..', 'images', 'hp.jpg')
+        image: "./images/hp.jpg"
     },
     {
         id: 2,
         name: 'Ron Weasley',
         email: 'r.weasley@hogwarts.edu',
         phone: '2234567890',
-        image: path.join(__dirname, '..', 'images', 'rw.jpg')
+        image: "./images/rw.jpg"
     },
     {
         id: 3,
         name: 'Hermione Granger',
         email: 'h.granger@hogwarts.edu',
         phone: '3234567890',
-        image: path.join(__dirname, '..', 'images', 'hg.jpg')
+        image: "./images/hg.jpg"
     },
     {
         id: 4,
         name: 'Dobby',
         email: 'dobby@hogwarts.edu',
         phone: '4234567890',
-        image: path.join(__dirname, '..', 'images', 'dobby.jpg')
+        image: "./images/dobby.jpg"
     },
 ]
 

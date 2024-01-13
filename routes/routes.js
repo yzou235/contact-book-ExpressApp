@@ -33,14 +33,8 @@ router.get("/gallery", (req, res) => {
 })
 
 // download image
-router.get('/download/squad.jpg', (req, res) => {
-    const filename = 'squad.jpg';
-    const filePath = `../images/${filename}`;
-    res.download(filePath, (err) => {
-        if (err) {
-            res.status(404).send('File not found');
-        }
-    });
+router.get('/download', (req, res) => {
+    res.download("./images/squad.jpg");
 });
 
 
