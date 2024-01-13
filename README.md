@@ -10,6 +10,17 @@ As of 1/13/2024, for ALAB 318.2.1:
 2. `Add Friend` feature is not developed yet. Only the page is rendering using the EJS view engine.
 3. Headshot images are not displaying on the homepage. Will solve this later.
 
+## Table of Contents
+
+- [ALAB 318.2.1 Features](#ALAB-318.2.1-Features)
+- [Preview](#preview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Routes](#routes)
+- [Dependencies](#dependencies)
+
 ## ALAB 318.2.1 Features
 
 1. View templates include:
@@ -25,17 +36,6 @@ As of 1/13/2024, for ALAB 318.2.1:
 ![ALAB 318.2.1 Preview](./preview/preview2.png)
 ![ALAB 318.2.1 Preview](./preview/preview3.png)
 ![ALAB 318.2.1 Preview](./preview/preview4.png)
-
-## Table of Contents
-
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Routes](#routes)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -64,3 +64,57 @@ As of 1/13/2024, for ALAB 318.2.1:
   .gitignore
   README.md
 ```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+Start the application:
+
+```bash
+npm start
+```
+
+Visit http://localhost:3000 in your web browser.
+
+## Routes
+
+1. **Home Page:**
+
+   - URL: [http://localhost:3000/](http://localhost:3000/)
+   - Description: Displays a table of all friends' contact information.
+   - Template: `index.ejs`
+
+2. **Friend Details by ID:**
+
+   - URL: [http://localhost:3000/friends/:id](http://localhost:3000/friends/:id)
+   - Description: Returns a friend's details in JSON format based on the provided friend ID.
+
+3. **Add Friend Page:**
+
+   - URL: [http://localhost:3000/add](http://localhost:3000/add)
+   - Description: Renders the "Add Friend" page.
+   - Template: `add_friend.ejs`
+
+4. **Gallery Page:**
+
+   - URL: [http://localhost:3000/gallery](http://localhost:3000/gallery)
+   - Description: Renders the "Gallery" page.
+   - Template: `gallery.ejs`
+
+5. **Download Image:**
+
+   - URL: [http://localhost:3000/download/squad.jpg](http://localhost:3000/download/squad.jpg)
+   - Description: Downloads the "squad.jpg" image using `res.download`.
