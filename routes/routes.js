@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const friendsData = require('../data/friends-data');
+const path = require('path');
 
 // router.get('/users', (req, res) => {
 //     res.send("All Users");
@@ -30,6 +31,17 @@ router.get("/add", (req, res) => {
 router.get("/gallery", (req, res) => {
     res.render('gallery', { title: "Gallery" });
 })
+
+// download image
+router.get('/download/squad.jpg', (req, res) => {
+    const filename = 'squad.jpg';
+    const filePath = `../images/${filename}`;
+    res.download(filePath, (err) => {
+        if (err) {
+            res.status(404).send('File not found');
+        }
+    });
+});
 
 
 module.exports = router;

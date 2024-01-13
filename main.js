@@ -20,6 +20,8 @@ const PORT = process.env.PORT || 3000; // in case .env failed
 // Set Middleware //
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+// Serve static files from the 'images' directory
+app.use('/images', express.static(__dirname + '/images'));
 
 // app.use(
 //     session({
