@@ -2,13 +2,12 @@
 
 A simple CRUD web application to manage a contact book using Node.js and Express.
 
-## Update
+### Update
 
-As of 1/13/2024, for ALAB 318.2.1:
+As of 1/14/2024:
 
 1. Used `friends-data.js` to populate the app. In the future, will try to use MongoDB.
-2. `Add Friend` feature is not developed yet. Only the page is rendering using the EJS view engine.
-3. Headshot images are not displaying on the homepage. Will solve this later.
+2. `Add Friend` feature will be developed in the future. Only the page is rendering using the EJS view engine.
 
 ## Table of Contents
 
@@ -28,7 +27,7 @@ As of 1/13/2024, for ALAB 318.2.1:
    - Add friend page.
    - Gallery page.
 2. Router parameter used friend id `/friends/:id` to return a friend's details in JSON.
-3. A button to use `res.download` method to download a gallery picture (not working; will investigate later).
+3. A button to use `res.download` method to download a gallery picture.
 
 ### Preview
 
@@ -36,6 +35,7 @@ As of 1/13/2024, for ALAB 318.2.1:
 ![ALAB 318.2.1 Preview](./preview/preview2.png)
 ![ALAB 318.2.1 Preview](./preview/preview3.png)
 ![ALAB 318.2.1 Preview](./preview/preview4.png)
+![ALAB 318.2.1 Preview](./preview/preview5.png)
 
 ## Features
 
@@ -116,5 +116,5 @@ Visit http://localhost:3000 in your web browser.
 
 5. **Download Image:**
 
-   - URL: [http://localhost:3000/download/squad.jpg](http://localhost:3000/download/squad.jpg)
+   - URL: [http://localhost:3000/download](http://localhost:3000/download)
    - Description: Downloads the "squad.jpg" image using `res.download`.
