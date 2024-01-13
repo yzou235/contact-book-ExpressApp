@@ -12,6 +12,17 @@ router.get("/", (req, res) => {
     // {} is an object (to be used by the template engine to dynamically generate the HTML) passed to the render method
 });
 
+// New route to get friend details by ID
+router.get("/friends/:id", (req,res) => {
+    const friendId = parseInt(req.params.id);
+    const friend = friendsData.find((f) => f.id === friendId)
+    if (friend) {
+        res.json(friend);
+    } else {
+        res.status(404).json({error:'Friend not fount'});
+    }
+})
+
 router.get("/add", (req, res) => {
     res.render('add_friend', { title: "Add Friend" });
 })
